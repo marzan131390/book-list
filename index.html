@@ -8,8 +8,50 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <h1>Hello World</h1>
-    
+    <div class="book-container"> 
+        <h1>Books List &amp; Description</h1>
+        <div class="book-input-section"> 
+            <h3>Book Name.</h3>
+            <input type="text" placeholder="Enter your book name" class="book-input">
+            <h3>Book Description</h3>
+            <input type="text" placeholder="Book description" class="description-input">
+            <h3>Author Name</h3>
+            <input type="text" placeholder="Author name" class="author-name"><br>
+            <button class="custom-btn add-book">Add Books</button>
+        </div>
+        <div class="book-list-section"> 
+            <h1>Your Book List Are:</h1>
+            <table> 
+                <thead> 
+                    <tr> 
+                        <th>Book Name</th>
+                        <th>Description</th>
+                        <th>Author Name</th>
+                        <th>Remove Book</th>
+                    </tr>
+                </thead>
+                <tbody class="books-list"> 
+                    <!-- <tr> 
+                        <td class="book-name">Chemistry</td>
+                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur corporis rem quisquam! Maiores ratione itaque, tempora dolor alias eaque expedita? Aliquam molestias facere nam quaerat perferendis voluptatum repudiandae maxime qui!</td>
+                        <td>Marzan</td>
+                        <td>X</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="filter-section"> 
+        <h1>Filter Your Books</h1>
+        <input type="text" placeholder="Search your books" class="filter-input">
+        <div class="filtering-book-list"> 
+            <ul class="books"> 
+                
+            </ul>
+        </div>
+        <button class="custom-btn clear-books">Clear Books</button>
+    </div>
+
     <script src="script/script.js"></script>
 </body>
 </html>
